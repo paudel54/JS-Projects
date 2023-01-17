@@ -43,3 +43,33 @@ form button:hover {
   background: #d88771;
   color: white;
 }
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  list-style: none;
+  min-width: 30%;
+}
+
+.todo {
+  background: white;
+  margin: 0.5rem;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+//pushes the li 'text hey to max space, growing max"
+.todo li {
+  flex: 1;
+}
+
+.trash-btn, 
+.complete-btn{
+  background #ff6747;
+}

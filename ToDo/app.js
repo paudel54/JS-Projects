@@ -41,14 +41,14 @@ function addToDo(event) {
 
     // CHECK MARK BUTTON
     const completedButton = document.createElement('button');
-    completedButton.innerHTML = '<i class = "fas fa-check"></i>';
+    completedButton.innerHTML = '<i class = "fa-solid fa-check"></i>';
     completedButton.classList.add("complete-btn");
     todoDiv.appendChild(completedButton);
 
     // CHECK TRASH BUTTON
     const trashButton = document.createElement('button');
-    completedButton.innerHTML = '<i class = "fas fa-trash"></i>';
-    completedButton.classList.add("complete-btn");
+    trashButton.innerHTML = '<i class = "fas fa-trash"></i>';
+    trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
 
     //Appending to list
