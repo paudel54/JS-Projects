@@ -54,4 +54,5 @@ function addToDo(event) {
     //Appending to list
     //Apppending to the query selected class form todoList var
     todoList.appendChild(todoDiv);
+    // https://www.youtube.com/watch?v=Ttf3CEsEwMQ
 }   
