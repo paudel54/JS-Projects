@@ -15,7 +15,20 @@ function newQuote() {
     //Pick a random quote from apiQuotes array
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
     // console.log(quote);
-    authorText.textContent = quote.author;
+
+    //check if author field is balnk and replace it with 'unknown'
+    if (!quote.author) {
+        authorText.textContent = 'Unknown';
+    } else {
+        authorText.textContent = quote.author;
+    }
+    //check quote length to determine styling, JS selects class to style. 
+    if (quote.text.length > 50) {
+        quoteText.classList.add('long-quote');
+    } else {
+        quoteText.classList.remove('long-quote');
+    }
+    //adding text from quote api object
     quoteText.textContent = quote.text;
 }
 
@@ -41,8 +54,7 @@ async function getQuotes() {
     }
 }
 
-//On Load
-getQuotes();
+
 
 //loading from local machine
 
@@ -54,3 +66,19 @@ getQuotes();
 // }
 
 // newQuote();
+
+
+//Tweet quote
+function tweetQuote() {
+    //here ? => query , backtick `` is used because we can pass varibale onto it. 
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+    window.open(twitterUrl, '_blank');
+}
+
+//Event Listeners
+//making the button functional
+newQuoteBtn.addEventListener('click', newQuote);
+twitterBtn.addEventListener('click', tweetQuote);
+
+//On Load
+getQuotes();
