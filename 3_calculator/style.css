@@ -5,4 +5,60 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  /* uigradients.com */
+  background: linear-gradient(to right, #348ac7, #7474bf);
+
+  display: flex;
+  /* justify horizontally */
+  justify-content: center;
+  /* justify vertically */
+  align-items: center;
+}
+
+.calculator {
+  background: white;
+  width: 400px;
+  border-radius: 12px;
+  /* x axis y axis spread blur color */
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+}
+
+.calculator-display {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* top left, top right, bottom left , bottom right */
+  border-radius: 10px 10px 0 0;
+}
+
+.calculator-display h1 {
+  margin: 0;
+  padding: 25px;
+  font-size: 45px;
+  font-family: "lucida Console";
+  overflow-x: auto;
+}
+
+/* custom scrollBar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
