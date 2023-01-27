@@ -6,10 +6,19 @@ const clearBtn = document.getElementById('clear-btn');
 
 // Add Event Listeners for numbers, operators,decimal buttons
 function sendNumberValue(number) {
-    // console.log(number);
+    console.log(number);
     // showing Numbers on calculator display , html id, with css textContent feature
+    // calculatorDisplay.textContent = number;
 
-    calculatorDisplay.textContent = number;
+    //If current display value is 0 replace it with other number, if not 0 concatinate it. 
+
+    const displayValue = calculatorDisplay.textContent;
+    // console.log(displayValue);
+    //  carries default value 0, given by calculatorDisplay.textContent
+    // initially secreen value is 0 , so when it's 0 number would be assingdd to input number, after 1st iteration
+    //the default value gets changed, and therefor number would be concatinated with previsous value
+    calculatorDisplay.textContent = displayValue === '0' ? number : displayValue + number;
+
 
 }
 
@@ -21,6 +30,6 @@ inputBtns.forEach((inputBtn) => {
     } else if (inputBtn.classList.contains('operator')) {
         inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
     } else if (inputBtn.classList.contains('decimal')) {
-        inputBtn.addEventListener('click', () => sendNumberValue());
+        inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
     }
 });
