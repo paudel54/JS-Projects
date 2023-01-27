@@ -22,6 +22,13 @@ function sendNumberValue(number) {
 
 }
 
+function addDecimal() {
+    // If no decimal, add one 
+    if (!calculatorDisplay.textContent.includes('.')) {
+        // added decimal after the dispaly numbers
+        calculatorDisplay.textContent = `${calculatorDisplay.textContent}.`
+    }
+}
 
 inputBtns.forEach((inputBtn) => {
     // target input button with no classList, here numbers only have no classList
@@ -30,6 +37,15 @@ inputBtns.forEach((inputBtn) => {
     } else if (inputBtn.classList.contains('operator')) {
         inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
     } else if (inputBtn.classList.contains('decimal')) {
-        inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
+        inputBtn.addEventListener('click', () => addDecimal());
     }
 });
+
+// Reset Display
+function resetAll() {
+    calculatorDisplay.textContent = '0';
+}
+
+// Event listener for clear btn
+
+clearBtn.addEventListener('click', resetAll);
