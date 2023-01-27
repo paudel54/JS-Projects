@@ -41,23 +41,47 @@ function addDecimal() {
         calculatorDisplay.textContent = `${calculatorDisplay.textContent}.`
     }
 }
+// Calculate First and Second values depending on operator.
+
+const calculate = {
+    '/': (firstNumber, secondNumber) => firstNumber / secondNumber,
+    '*': (firstNumber, secondNumber) => firstNumber * secondNumber,
+    '+': (firstNumber, secondNumber) => firstNumber + secondNumber,
+    '-': (firstNumber, secondNumber) => firstNumber - secondNumber,
+    '=': (firstNumber, secondNumber) => firstNumber = secondNumber,
+
+};
+
 
 function useOperator(operator) {
     // converted text string to number and storing it , when operator are clicked comes here as operator arg
     const currentValue = Number(calculatorDisplay.textContent);
+    // Prevent multipe operators
+    if (operatorValue && awaitingNextValue) {
+        // update current operator fn
+        operatorValue = operator;
+        return;
+    }
     // Assign first value if no value
     // when opeator is clicked after taking Number Input then
     if (!firstValue) {
         firstValue = currentValue;
     } else {
-        console.log('currentValue', currentValue);
+        console.log(firstValue, operatorValue, currentValue);
+        //PASSING DATA TO OBJECT, INTERESTING .  
+        const calculation = calculate[operatorValue](firstValue, currentValue);
+        calculatorDisplay.textContent = calculation;
+        console.log('Calculation', calculation);
+        // 
+        firstValue = calculation;
     }
+
     // Ready for next value, store operator
     awaitingNextValue = true;
 
     operatorValue = operator;
-    console.log('firstValue', firstValue);
-    console.log('operator', operatorValue);
+    // console.log('firstValue', firstValue);
+    // console.log('operator', operatorValue);
 }
 
 // event listeners
