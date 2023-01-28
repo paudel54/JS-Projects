@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>SRB Concern!</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css"
+    integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Animate on Scroll CDN-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Tailwind Library -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+</head>
+
+<body class="text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <!-- Nav Left Side -->
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+          href="https://www.creative-tim.com/learning-lab/tailwindcss-starter-project#/presentation">
+          <!-- Nav Title -->
+          Nepal-China-Trade-Services
+        </a>
+        <!-- Hamburger Menu (Mobile) -->
+        <button
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button" onclick="toggleNavbar('example-collapse-navbar')">
+          <!-- Icon -->
+          <i class="text-white fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Nav Right Side -->
+      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <!-- End of Navigation -->
+
+  <!-- Splash Page -->
+  <main>
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+      <!-- Background Image -->
+      <div class="absolute top-0 w-full h-full bg-center bg-cover"
+        style="background:url('https://images.unsplash.com/photo-1590497008432-598f04441de8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1691&q=80')">
+        <!-- Overlay -->
+        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+      </div>
+      <!-- Text Over Main Background -->
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <h1 class="text-white font-semibold text-5xl">
+                Welcome to SRB Trade Concern
+              </h1>
+              <p class="mt-4 text-lg text-gray-300">
+                We are Nepal's top Custom Clearance Service & wholeshale Service. We gurantee safe delivery of
+                your's
+                good from China to Nepal along with custom clearnace by any route air, ship or road.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Making Polygon Shape in Background -->
+      <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px; transform: translateZ(0);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- End of Splash Page -->
+
+    <!-- Services Section -->
+    <section class="pb-20 bg-gray-300 -mt-24">
+      <!-- 3 Card Section -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <!-- Card -->
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <!-- Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48zm368-48c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48z" />
+                  </svg>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Custom Clearance</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  We provide you with custom Clearance Service that bypass from any route including air, ship and land.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="w-full md:w-4/12 px-4 text-center">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <!-- Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z" />
+                  </svg>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Product Design & Manufacturing </h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  A leading garment design and manufacturing services. Our team of experienced designers and
+                  skilled manufacturers work together to create high-quality, custom garments that meet the unique needs
+                  and specifications of each client.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                  <!-- Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z" />
+                  </svg>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Agent in China</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  We have professional, Nepalese Agents in china, who would guide you throughout your business days in
+                  China. Agents would help you in translation and Communication with chinese Business persons.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Box and Card Container -->
+        <div class="flex flex-wrap items-center mt-32">
+          <!-- Text Box Container -->
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+            <!-- Text Box -->
+            <div
+              class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+              <!-- Icon -->
+              <i class="fas fa-star text-xl"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+              Trying New Things is Great!
+            </h3>
+            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              Our company is dedicated to delivering your goods with the least amount of cost and effort possible.
+            </p>
+            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+              We understand that businesses and individuals have unique needs when it comes to shipping and logistics,
+              and we strive to provide flexible, cost-effective solutions that work for you.
+            </p>
+            <a href="#" class="font-bold text-gray-800 mt-8">Have a business deal with SRB Concern!
+            </a>
+          </div>
+
+          <!-- Image Cap & Text Card -->
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+            <div
+              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+              <!-- Image -->
+              <img alt="Machinery Parts"
+                src="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+                class="w-full align-middle rounded-t-lg" />
+              <blockquote class="relative p-8 mb-4">
+                <!-- Making Polygon Shape in Card -->
+                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                  <polygon points="-30,95 583,95 583,65" class="text-orange-500 fill-current"></polygon>
+                </svg>
+                <!-- Text Box -->
+                <h4 class="text-xl font-bold text-white">
+                  Garments & Clothings
+                </h4>
+                <p class="text-md font-light mt-2 text-white">
+                  We deliver, your ordered Garments for wholeshale with safe Transport and Timely delivery.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Services Section -->
+
+    <!-- About Section -->
+    <section class="relative py-20">
+      <!-- Making Polygon Shape in Background -->
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <!-- Image -->
+            <img alt="Garments for Growing company" class="max-w-full rounded-lg shadow-lg"
+              src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
+          </div>
+          <!-- Text Box Container-->
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div class="md:pr-12">
+              <div
+                class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                <!-- Icon -->
+                <i class="fas fa-rocket text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <h3 class="text-3xl font-semibold">Our help to A growing company</h3>
+              <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                Whether you're looking for a more efficient way to get your products to market, or you need a reliable
+                partner to help you manage your supply chain, we have the expertise and resources to help you achieve
+                your goals. We Deliver.
+              </p>
+              <!-- List -->
+              <ul class="list-none mt-6">
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fas fa-fingerprint"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">
+                        Carefully designed custom components
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fab fa-html5"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">High Quality Products</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="far fa-paper-plane"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">An agent to help you make a deal directly with business party</h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Team Section -->
+    <section class="pt-20 pb-48">
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <!-- Text Box -->
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold">Here are our Teams</h2>
+            <p class="text-lg leading-relaxed m-4 text-gray-600">
+              Our team offers import export services from China to Nepal. We have and expert and professionals with 7+
+              years experience on
+              this business area. We make your business grow.
+            </p>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap">
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <!-- Image -->
+              <img alt="Team Lead" src="https://immersionmandarin.com/wp-content/uploads/2022/12/5.png"
+                class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Subrat Paudel</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Project Manager & Founder
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://www.facebook.com/Xubrat1" target="_blank">
+                      <i class=" fab fa-facebook-f"></i>
+                    </a>
+                  </button>
+                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-dribbble"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <!-- Image -->
+              <img alt="..."
+                src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/309258990_2544434852366338_4070397139561359041_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=DWD1JEj9IhsAX_u2KPR&_nc_ht=scontent.fktm7-1.fna&oh=00_AfDp1Z0GNa2cFHAiM2bD3gxrPDDKGbyh-h4sCpinyqUi9w&oe=63DAE12D"
+                class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Baldev Parajuli</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Project lead & Founder
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-google"></i>
+                  </button>
+                  <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://www.facebook.com/baldev.parajuli" target="_blank">
+                      <i class=" fab fa-facebook-f"></i>
+                    </a>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <!-- Image -->
+              <img alt="..." src="https://randomuser.me/api/portraits/women/17.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Xīn yán</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Logistic Incharge -China
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-google"></i>
+                  </button>
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <!-- Image -->
+              <img alt="Transport Manager" src="https://randomuser.me/api/portraits/men/92.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Hào rán</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Transport head -China
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-dribbble"></i>
+                  </button>
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-google"></i>
+                  </button>
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Team Section -->
+
+    <!-- Contact Section -->
+    <section class="pb-20 relative block bg-gray-900">
+      <!-- Making Polygon Shape in Background -->
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <!-- Text Box -->
+        <div class="flex flex-wrap text-center justify-center">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold text-white">Plan you Business Today!</h2>
+            <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+              With our extensive network of partners and suppliers, we can offer competitive rates and a wide range of
+              services, from warehousing and distribution to packaging and freight forwarding. Trust us to help you
+              streamline your operations and get your goods where they need to go, at the lowest possible cost.
+            </p>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap mt-12 justify-center">
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-medal text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Excellent Services
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              <!-- Some quick example text to build on the card title and make up
+              the bulk of the card's content. -->
+            </p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-poll text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Grow your market
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              <!-- Some quick example text to build on the card title and make up
+              the bulk of the card's content. -->
+            </p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-lightbulb text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">Your's ideas into Reality</h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              <!-- Some quick example text to build on the card title and make up
+              the bulk of the card's content. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form -->
+    <section class="relative block py-24 lg:pt-0 bg-gray-900">
+      <!-- Container -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+              <div class="flex-auto p-5 lg:p-10">
+                <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+                <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                  Complete this form and we will get back to you in 24 hours.
+                </p>
+                <!-- Name -->
+                <div class="relative w-full mb-3 mt-8">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
+                    Full Name
+                  </label><input type="text"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
+                </div>
+                <!-- Email -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
+                    Email
+                  </label><input type="email"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Email" style="transition: all 0.15s ease 0s;" />
+                </div>
+                <!-- Message -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
+                    Message
+                  </label><textarea rows="4" cols="80"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Type a message..."></textarea>
+                </div>
+                <div class="text-center mt-6">
+                  <button
+                    class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="button" style="transition: all 0.15s ease 0s;">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact Section -->
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="relative bg-gray-300 pt-8 pb-6">
+    <!-- Making Polygon Shape in Background -->
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px; transform: translateZ(0);">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+    <!-- Section Container -->
+    <div class="container mx-auto px-4">
+      <!-- Text Box Container -->
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+          <h5 class="text-lg mt-0 mb-2 text-gray-700">
+            Contact-us: 9841######
+          </h5>
+          <!-- Social Media Buttons -->
+          <div class="mt-6">
+            <a href="https://www.twitter.com/creativetim" target="_blank"><i
+                class="fab fa-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="https://www.facebook.com/creativetim" target="_blank"><i
+                class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="https://www.dribbble.com/creativetim" target="_blank"><i
+                class="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+
+          </div>
+        </div>
+        <!-- List Container -->
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <!-- List 1 -->
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://www.creative-tim.com/presentation">About Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://blog.creative-tim.com">Blog</a>
+                </li>
+
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://www.creative-tim.com/bootstrap-themes/free">Free Products</a>
+                </li>
+              </ul>
+            </div>
+            <!-- List 2 -->
+            <div class="w-full lg:w-4/12 px-4">
+              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+              <ul class="list-unstyled">
+
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://creative-tim.com/terms">Terms &amp; Conditions</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://creative-tim.com/privacy">Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://creative-tim.com/contact-us">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Line Break -->
+      <hr class="my-6 border-gray-400" />
+      <!-- Footer Text -->
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-600 font-semibold py-1">
+            Copyright © 2023 SRB Trade Concern!
+            <a href="https://www.facebook.com/Xubrat1" class="text-gray-600 hover:text-gray-900">Subrat Paudel</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer Section -->
+</body>
+<!-- Navigation Script -->
+<!-- AOS animatin on scroll ext src -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+  function toggleNavbar(collapseID) {
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle("block");
+  }
+</script>
+
+</html>
