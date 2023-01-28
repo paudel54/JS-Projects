@@ -64,10 +64,10 @@
         <div class="items-center flex flex-wrap">
           <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <div class="pr-12">
-              <h1 class="text-white font-semibold text-5xl">
+              <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
                 Welcome to SRB Trade Concern
               </h1>
-              <p class="mt-4 text-lg text-gray-300">
+              <p class="mt-4 text-lg text-gray-300" data-aos="fade-right">
                 We are Nepal's top Custom Clearance Service & wholeshale Service. We gurantee safe delivery of
                 your's
                 good from China to Nepal along with custom clearnace by any route air, ship or road.
@@ -673,9 +673,15 @@
 </body>
 <!-- Navigation Script -->
 <!-- AOS animatin on scroll ext src -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+    delay: 200, // values from 0 to 3000, with step 50ms
+    duration: 1500, // values from 0 to 3000, with step 50ms
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom',
+  });
 </script>
 
 <script>
