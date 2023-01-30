@@ -5,6 +5,9 @@ const artist = document.getElementById('artist');
 const progressContainer = document.getElementById('progress-container');
 const progress = document.getElementById('progress');
 
+const currentTimeEL = document.getElementById('current-time');
+const durationEL = document.getElementById('duration');
+
 // use of querySelector to select anythings like element, id, classes
 // here we are targeting to select audio !! element with query selector
 const music = document.querySelector('audio');
@@ -109,9 +112,38 @@ function updateProgressBar(e) {
         // console.log(duration, currentTime);
         // Update Progress Bar width
         const progressPercent = (currentTime / duration) * 100;
-        console.log(progressPercent);
+        // console.log(progressPercent);
         // this line changes css prop
         progress.style.width = `${progressPercent}%`;
+        // Calculate display for total duration in minutes
+        const durationMinutes = Math.floor(duration / 60);
+        let durationSeconds = Math.floor(duration % 60);
+
+        if (durationSeconds < 10) {
+            durationSeconds = `0${durationSeconds}`
+        }
+        console.log('minutes :', durationMinutes);
+        console.log('Seconds', durationSeconds);
+        //displays the total music time  
+        // durationEL.textContent = `${durationMinutes} : ${durationSeconds}`
+
+        if (durationSeconds) {
+            durationEL.textContent = `${durationMinutes} : ${durationSeconds}`;
+        }
+        // ******************************************************************
+        // Calculate display for total running time 
+        const currentMinutes = Math.floor(currentTime / 60);
+        let currentSeconds = Math.floor(currentTime % 60);
+
+        if (currentSeconds < 10) {
+            currentSeconds = `0${currentSeconds}`
+        }
+
+        //displays the total music time  
+        // durationEL.textContent = `${durationMinutes} : ${durationSeconds}`
+        if (currentSeconds) {
+            currentTimeEL.textContent = `${currentMinutes} : ${currentSeconds}`;
+        }
 
     }
 }
