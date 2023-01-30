@@ -2,6 +2,9 @@ const image = document.querySelector('img');
 const title = document.getElementById('title');
 const artist = document.getElementById('artist');
 
+const progressContainer = document.getElementById('progress-container');
+const progress = document.getElementById('progress');
+
 // use of querySelector to select anythings like element, id, classes
 // here we are targeting to select audio !! element with query selector
 const music = document.querySelector('audio');
@@ -97,6 +100,23 @@ function nextSong() {
 // ON Load - Select First Song
 loadSong(songs[songIndex]);
 
+// Update Progress Bar & Time
+function updateProgressBar(e) {
+    if (isPlaying) {
+        // console.log(e);
+        // object destructing
+        const { duration, currentTime } = e.srcElement;
+        // console.log(duration, currentTime);
+        // Update Progress Bar width
+        const progressPercent = (currentTime / duration) * 100;
+        console.log(progressPercent);
+        // this line changes css prop
+        progress.style.width = `${progressPercent}%`;
+
+    }
+}
+
 // Event Listeners
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
+music.addEventListener('timeupdate', updateProgressBar);
