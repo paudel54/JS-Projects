@@ -33,7 +33,7 @@ function newQuote() {
     if (!quote.author) {
         authorText.textContent = 'Unknown';
     } else {
-        authorText.textContent = quote.author;
+        authorext.textContent = quote.author;
     }
     //check quote length to determine styling, JS selects class to style. 
     if (quote.text.length > 50) {
@@ -48,7 +48,7 @@ function newQuote() {
 }
 
 
-
+//get quote from api
 async function getQuotes() {
     loading();
     const apiUrl = 'https://type.fit/api/quotes';
@@ -56,7 +56,7 @@ async function getQuotes() {
     //error and do something with it
     try {
         const response = await fetch(apiUrl);
-        //gettting json from api , and putting on global var
+        //gettting  in json format from api , and putting on global var
         apiQuotes = await response.json();
         // console.log(apiQuotes);
         //created 1617 objs but we want only single obj one at a time

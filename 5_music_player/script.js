@@ -73,8 +73,8 @@ let songIndex = 0;
 
 // Previous Song
 function prevSong() {
-    songIndex--;
     console.log(songIndex);
+    songIndex--;
     if (songIndex < 0) {
         songIndex = songs.length - 1;
     }
@@ -85,8 +85,8 @@ function prevSong() {
 
 // Next Song
 function nextSong() {
-    songIndex++;
     console.log(songIndex);
+    songIndex++;
     if (songIndex > songs.length - 1) {
         songIndex = 0;
     }
