@@ -19,13 +19,13 @@ const nextBtn = document.getElementById('next');
 const songs = [
     {
         name: 'jacinto-1',
-        displayName: 'The Instrumental',
-        artist: 'David Henry',
+        displayName: 'Calm Down',
+        artist: 'Song by Rema',
     },
     {
         name: 'jacinto-2',
-        displayName: 'Seven National Army (Remix)',
-        artist: 'Robot Philips',
+        displayName: 'Dreamers',
+        artist: 'Jungkook song',
     },
     {
         name: 'jacinto-3',
