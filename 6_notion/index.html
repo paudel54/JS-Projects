@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="main-title">Task Scheduler</h1>
+    <!-- Drag Container -->
+    <div class="drag-container">
+        <!-- parent onordered list -->
+        <ul class="drag-list">
+            <!-- Backlog Column 1-->
+            <li class="drag-column backlog-column">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <!-- Backlog Content -->
+                <div id="backlog-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign"> + </span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item">
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- ********************************************* -->
+            <!-- Progress Column 2nd -->
+            <li class="drag-column progress-column">
+                <span class="header">
+                    <h1>Progress</h1>
+                </span>
+                <!-- Progress Content -->
+                <div id="progress-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="progress-list">
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign"> + </span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item">
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- ******************************************************** -->
+            <!-- Complete Column 3rd -->
+            <li class="drag-column complete-column">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <!-- Complete Content -->
+                <div id="complete-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="complete-list">
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign"> + </span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item">
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- ******************************************************** -->
+            <!-- ******************************************************** -->
+            <!-- hold on  4th -->
+            <li class="drag-column on-hold-column">
+                <span class="header">
+                    <h1>On Hold</h1>
+                </span>
+                <!-- Hold ont -->
+                <div id="on-hold-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="on-hold-list">
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                            natus ab aperiam nisi ipsa voluptas nam maiores, suscipit quas reiciendis ipsam? Cum ut
+                            suscipit modi reprehenderit dolores ducimus minus vitae. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Ullam, pariatur molestias odit, reprehenderit quasi sunt,
+                            laborum accusantium officiis aperiam id repudiandae magnam voluptates quo similique facere
+                            omnis ducimus fuga laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                            fugit accusamus facere praesentium deleniti perferendis voluptate consequatur eum nam minima
+                            quae esse maxime expedita, rerum omnis. Deserunt repudiandae voluptas ad? Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Asperiores temporibus accusantium voluptatem
+                            perspiciatis. Explicabo voluptatem modi, vitae odit voluptas blanditiis perspiciatis quod
+                            eligendi quas voluptates exercitationem facilis aut magni eius. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Facilis nostrum accusantium nemo odio quia quo quos delectus
+                            eaque quas, doloremque natus minima impedit fuga laboriosam ipsum nam ullam id rerum? Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Nobis, aliquid dignissimos dolore
+                            incidunt, aliquam sequi officia expedita commodi culpa atque facere est praesentium velit,
+                            impedit animi saepe alias harum laboriosam?
+                        </li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign"> + </span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item">
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
