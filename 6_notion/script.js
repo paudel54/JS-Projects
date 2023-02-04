@@ -9,6 +9,7 @@ const progressList = document.getElementById('progress-list');
 const completeList = document.getElementById('complete-list');
 const onHoldList = document.getElementById('on-hold-list');
 
+console.log(listColumns);
 // Items
 // we have not yet loaded from local storage
 let updatedOnLoad = false;
@@ -26,7 +27,7 @@ let currentColumn;
 
 // Get Arrays from localStorage if available, set default values if not
 function getSavedColumns() {
-  if (localStorage.getItem('backlogItem s')) {
+  if (localStorage.getItem('backlogItems')) {
     backlogListArray = JSON.parse(localStorage.backlogItems);
     progressListArray = JSON.parse(localStorage.progressItems);
     completeListArray = JSON.parse(localStorage.completeItems);
@@ -105,7 +106,32 @@ function updateDOM() {
     createItemEl(onHoldList, 0, onHoldItem, index)
   });
   // Run getSavedColumns only once, Update Local Storage
+  updatedOnLoad = true;
+  updateSavedColumns();
+}
+// Allows array to reflect drag and drop, on page refresh keep consisit data. :Rebuilidng arrays.
+function rebuildArrays() {
+  // resetting out an array , pusing out makes bug
+  backlogListArray = [];
+  for (let i = 0; i < backlogList.children.length; i++) {
+    backlogListArray.push(backlogList.children[i].textContent);
+  }
+  progressListArray = [];
+  for (let i = 0; i < progressList.children.length; i++) {
+    progressListArray.push(progressList.children[i].textContent);
+  }
+  completeListArray = [];
+  for (let i = 0; i < completeList.children.length; i++) {
+    completeListArray.push(completeList.children[i].textContent);
+  }
+  onHoldListArray = [];
+  for (let i = 0; i < onHoldList.children.length; i++) {
+    onHoldListArray.push(onHoldList.children[i].textContent);
+  }
 
+  updateDOM();
+  //   console.log(backlogList.children);
+  //   console.log(progressList.children);
 }
 
 // When Items Starts Dragging
@@ -125,9 +151,15 @@ function drop(e) {
     column.classList.remove('over');
   });
 
+  // currentcolumn is empty global var
+  // listColumns contains the entire list texts.
+  // draggedItem is also a global var
   // Adding Items to Column on drag drop
   const parent = listColumns[currentColumn];
+  // console.log('parent-1', parent);
   parent.appendChild(draggedItem);
+  // console.log('parentapend', parent);
+  rebuildArrays();
 }
 // when Item Enters Column Area
 function dragEnter(column) {
@@ -136,7 +168,5 @@ function dragEnter(column) {
   currentColumn = column;
 
 }
-
-
 // On Load
 updateDOM();
