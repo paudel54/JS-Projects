@@ -109,6 +109,31 @@ function updateDOM() {
   updatedOnLoad = true;
   updateSavedColumns();
 }
+// Add to column List, Reset Textbox
+function addToColumn(column) {
+  // console.log(addItems[column].textContent);
+  const itemText = addItems[column].textContent;
+  const selectedArray = listArrays[column];
+  selectedArray.push(itemText);
+  addItems[column].textContent = '';
+  updateDOM();
+}
+
+// Show Add Item Input Box
+// We can directly style the html class in javascript with .style method. 
+function showInputBox(column) {
+  addBtns[column].getElementsByClassName.visibility = 'hidden';
+  saveItemBtns[column].style.display = 'flex';
+  addItemContainers[column].style.display = 'flex';
+}
+// Hide Item Input Box. 
+function hideInputBox(column) {
+  addBtns[column].getElementsByClassName.visibility = 'visible';
+  saveItemBtns[column].style.display = 'none';
+  addItemContainers[column].style.display = 'none';
+  addToColumn(column);
+}
+
 // Allows array to reflect drag and drop, on page refresh keep consisit data. :Rebuilidng arrays.
 function rebuildArrays() {
   // resetting out an array , pusing out makes bug
